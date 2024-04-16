@@ -63,7 +63,7 @@ If you'd like to contribute, follow these steps:
 
 Find a bug or want to request a new feature? Please let us know by submitting an issue.
 
-- [Issue Tracker](https://github.com/shravzzv/ODIN-Mini-message-board-project)
+- [Issue Tracker](https://github.com/shravzzv/ODIN-Mini-message-board-project/issues)
 
 ## License
 
