@@ -1,6 +1,8 @@
 {
   "name": "odin-mini-message-board-project",
   "version": "0.0.0",
+  "author": "Sai Shravan <shravzzv@outlook.com>",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "start": "node --env-file=.env ./bin/www",
@@ -17,5 +19,7 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
-  }
+  },
+  "repository": "github:shravzzv/ODIN-Mini-message-board-project",
+  "bugs": "https://github.com/shravzzv/ODIN-Mini-message-board-project/issues"
 }
