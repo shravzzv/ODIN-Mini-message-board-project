@@ -5,9 +5,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "node --env-file=.env ./bin/www",
-    "dev": "nodemon --env-file=.env ./bin/www",
-    "debug": "nodemon --env-file=.env --inspect ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "debug": "nodemon --inspect ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
