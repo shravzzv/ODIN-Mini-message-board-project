@@ -1,19 +1,8 @@
 const asyncHandler = require('express-async-handler')
-
-const messages = [
-  {
-    text: 'Hi there!',
-    user: 'Amando',
-    added: new Date(),
-  },
-  {
-    text: 'Hello World!',
-    user: 'Charles',
-    added: new Date(),
-  },
-]
+const db = require('../db/queries')
 
 exports.index = asyncHandler(async (req, res) => {
+  const messages = await db.getMessages()
   res.render('index', { title: 'Mini Messageboard', messages })
 })
 
@@ -23,6 +12,6 @@ exports.getNew = (req, res) => {
 
 exports.postNew = asyncHandler(async (req, res) => {
   const { text, user } = req.body
-  messages.push({ text, user, added: new Date() })
+  await db.postMessage(text, user, new Date())
   res.redirect('/')
 })
